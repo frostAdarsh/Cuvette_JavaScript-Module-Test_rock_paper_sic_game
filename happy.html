@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <main class="happycontainer">
+      <div class="happycontainerparts">
+        <div class="happyimage">
+          <img class="img1" src="image2/Group 5.svg" alt="star" />
+          <img class="img2" src="image2/Vector.svg " alt="trophy" />
+        </div>
+        <div class="happytext">
+          <h1 class="ht1">HURRAY!!</h1>
+          <h1 class="ht2">YOU WON THE GAME</h1>
+        </div>
+        <a href="index.html">
+          <button class="play-again hpa">PLAY AGAIN</button>
+        </a>
+      </div>
+    </main>
+    <button class="rules-btn" style="right: 2rem" onclick="togglePop()">
+      RULES
+    </button>
+    <div class="poprule" id="poprule-1">
+      <div class="overlay">
+        <div class="overin">
+          <div class="colse-btn" onclick="togglePop()">
+            <span class="cross">&#10006;</span>
+          </div>
+          <p class="titlef">Game Rules</p>
+          <ul class="uimain">
+            <li>
+              <p>
+                Rock beats scissors, scissors beat <br />
+                paper, and paper beats rock.
+              </p>
+            </li>
+            <li>
+              <p>
+                Agree ahead of time whether you’ll <br />
+                count off “rock, paper, scissors, <br />
+                shoot” or just “rock, paper, scissors.”
+              </p>
+            </li>
+            <li>
+              <p>
+                Use rock, paper, scissors to settle <br />
+                minor decisions or simply <br />
+                play to pass the time
+              </p>
+            </li>
+            <li>
+              <p>
+                If both players lay down the same <br />
+                hand, each player lays down another <br />
+                hand
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

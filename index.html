@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div class="allbox">
+      <header>
+        <div class="scorebox">
+          <div class="logo">
+            <div class="fontword">ROCK</div>
+            <div class="fontword">PAPER</div>
+            <div class="fontword">SCISSORS</div>
+          </div>
+          <div class="totalsc">
+            <div class="computersc">
+              <div class="fonts">COMPUTER</div>
+              <div class="fonts">SCORE</div>
+              <p class="point scorepc">0</p>
+            </div>
+            <div class="humansc">
+              <div class="fonts">YOUR</div>
+              <div class="fonts">SCORE</div>
+              <p class="point scoreh">0</p>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="gamemake">
+        <button class="yourchoice-btn" data-yourchoice="paper">
+          <div class="yourchoice paper">
+            <img src="./image/paper.svg" alt="paper" />
+          </div>
+        </button>
+        <button class="yourchoice-btn" data-yourchoice="scissors">
+          <div class="yourchoice scissors">
+            <img src="./image/scissors.svg" alt="scissors" />
+          </div>
+        </button>
+        <button class="yourchoice-btn" data-yourchoice="rock">
+          <div class="yourchoice rock">
+            <img src="./image/rock.svg" alt="rock" />
+          </div>
+        </button>
+        <div class="triangle"></div>
+      </section>
+    </div>
+    <section class="playgame hidden">
+      <h2 class="playgameh">YOU PICKED</h2>
+      <h2 class="playgameh">PC PICKED</h2>
+      <div class="playgamer"></div>
+      <div class="winnermess hidden">
+        <h3 class="winnertext"></h3>
+        <button class="play-again">PLAY AGAIN</button>
+      </div>
+      <div class="playgamer"></div>
+    </section>
+    <div class="bigbutton">
+      <button class="rules-btn" onclick="togglePop()">RULES</button>
+      <a href="happy.html">
+        <button class="next-btn hidden">NEXT</button>
+      </a>
+    </div>
+    <div class="poprule" id="poprule-1">
+      <div class="overlay">
+        <div class="overin">
+          <div class="colse-btn" onclick="togglePop()">
+            <span class="cross">&#10006;</span>
+          </div>
+          <p class="titlef">Game Rules</p>
+          <ul class="uimain">
+            <li>
+              <p>
+                Rock beats scissors, scissors beat <br />
+                paper, and paper beats rock.
+              </p>
+            </li>
+            <li>
+              <p>
+                Agree ahead of time whether you’ll <br />
+                count off “rock, paper, scissors, <br />
+                shoot” or just “rock, paper, scissors.”
+              </p>
+            </li>
+            <li>
+              <p>
+                Use rock, paper, scissors to settle <br />
+                minor decisions or simply <br />
+                play to pass the time
+              </p>
+            </li>
+            <li>
+              <p>
+                If both players lay down the same <br />
+                hand, each player lays down another <br />
+                hand
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
